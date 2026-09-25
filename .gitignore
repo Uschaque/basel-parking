@@ -1,0 +1,12 @@
+node_modules/
+__pycache__/
+*.pyc
+.venv/
+.env
+.env.*
+!.env.example
+.DS_Store
+.netlify/
+basel_parking/tests/artifacts*/
+basel_parking/data/*.csv
+basel_parking/data/*.tmp

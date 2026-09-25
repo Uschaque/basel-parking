@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://basel-parkings.netlify.app/sitemap.xml

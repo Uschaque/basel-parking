@@ -1,0 +1,123 @@
+{
+  "api_base": "https://data.bs.ch/api/explore/v2.1/catalog/datasets",
+  "live_dataset": "100088",
+  "history_dataset": "100014",
+  "timezone": "Europe/Zurich",
+  "lookback_days": 182,
+  "date_window_days": 14,
+  "live_refresh_ms": 60000,
+  "history_refresh_ms": 21600000,
+  "max_live_age_ms": 900000,
+  "max_history_age_days": 14,
+  "min_samples": 12,
+  "height_checked_on": "2026-09-25",
+  "clearance_m": {
+    "aeschen": 1.9,
+    "badbahnhof": 2.2,
+    "bahnhofsued": 1.95,
+    "city": 2.1,
+    "elisabethen": 2.1,
+    "europe": 1.9,
+    "kunstmuseum": 2.05,
+    "steinen": 2.1,
+    "storchen": 1.9,
+    "anfos": 2.0,
+    "centralbahn": 2.2,
+    "clarahuus": 2.0,
+    "claramatte": 2.2,
+    "messe": 2.0,
+    "postbasel": 2.5,
+    "rebgasse": 2.0
+  },
+  "destinations": {
+    "rathaus": {
+      "label": "Rathaus / Marktplatz",
+      "lat": 47.5582611,
+      "lon": 7.5885155
+    },
+    "sbb": {
+      "label": "Gare Basel SBB",
+      "lat": 47.5476225,
+      "lon": 7.5896417
+    },
+    "messe": {
+      "label": "Messeplatz",
+      "lat": 47.5640599,
+      "lon": 7.6011041
+    },
+    "museum": {
+      "label": "Kunstmuseum",
+      "lat": 47.5539294,
+      "lon": 7.5944513
+    }
+  },
+  "opening_hours_checked_on": "2026-09-25",
+  "opening_hours": {
+    "aeschen": {
+      "kind": "always"
+    },
+    "badbahnhof": {
+      "kind": "always"
+    },
+    "city": {
+      "kind": "always"
+    },
+    "elisabethen": {
+      "kind": "always"
+    },
+    "europe": {
+      "kind": "always"
+    },
+    "kunstmuseum": {
+      "kind": "always"
+    },
+    "steinen": {
+      "kind": "always"
+    },
+    "storchen": {
+      "kind": "always"
+    },
+    "centralbahn": {
+      "kind": "always"
+    },
+    "claramatte": {
+      "kind": "always"
+    },
+    "messe": {
+      "kind": "always"
+    },
+    "postbasel": {
+      "kind": "always"
+    },
+    "rebgasse": {
+      "kind": "always"
+    },
+    "bahnhofsued": {
+      "kind": "daily",
+      "start": 360,
+      "end": 1380
+    },
+    "anfos": {
+      "kind": "mon_sat_overnight",
+      "start": 360,
+      "end_next_day": 60,
+      "holidays": "closed",
+      "special_days": "check_operator"
+    },
+    "clarahuus": {
+      "kind": "mon_sat_overnight",
+      "start": 360,
+      "end_next_day": 60,
+      "sunday": "closed"
+    }
+  },
+  "capacity_unverified": [
+    "badbahnhof"
+  ],
+  "publisher": {
+    "name": "",
+    "email": "",
+    "address": ""
+  },
+  "site_url": "https://basel-parkings.netlify.app"
+}

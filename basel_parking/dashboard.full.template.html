@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="theme-color" content="#173f35">
+  <title>Basel Parking | Live spaces and arrival estimates</title>
+  <meta name="description" content="Check current parking availability in Basel, filter by vehicle height and explore historical estimates for a later arrival. English, German and French.">
+  __META__
+  <style>__STYLES__</style>
+</head>
+<body>
+  <a class="skip-link" href="#results" data-i18n="skip">Skip to results</a>
+  <header class="masthead">
+    <a class="brand" href="./"><span class="brand-icon" aria-hidden="true">P</span> Basel Parking</a>
+    <div class="header-controls"><label class="language-label" for="language" data-i18n="languageLabel">Language</label><select id="language" aria-label="Language"><option value="en">English</option><option value="de">Deutsch</option><option value="fr">Français</option></select></div>
+  </header>
+  <main>
+    <section class="intro">
+      <h1 data-i18n="headline">Parking spaces in Basel.</h1>
+      <p class="lead" data-i18n="lead">Official availability now. Historical estimates for later.</p>
+    </section>
+    <section class="search" aria-label="Your arrival">
+      <div class="field"><label for="destination" data-i18n="destination">Destination</label><select id="destination"></select></div>
+      <div class="field"><label for="day" data-i18n="arrivalDate">Arrival date</label><select id="day"></select></div>
+      <div class="field"><label for="hour" data-i18n="baselTime">Time in Basel</label><select id="hour"></select></div>
+      <div class="field"><label for="vehicle" data-i18n="vehicleHeight">Vehicle height</label><select id="vehicle"><option value="0" data-i18n="noFilter">Any height</option><option value="1.8">1.80 m</option><option value="1.9">1.90 m</option><option value="2">2.00 m</option><option value="2.05">2.05 m</option><option value="2.1">2.10 m</option><option value="2.2">2.20 m</option><option value="2.5">2.50 m</option></select></div>
+      <button class="primary" id="view-results" type="button" data-i18n="viewResults">Show parking spaces</button>
+    </section>
+    <div class="status-row"><p id="connection" role="status" aria-live="polite">Connecting to parking data…</p><button id="refresh" type="button" data-i18n="refresh">Refresh</button></div>
+    <section id="results" aria-labelledby="results-title">
+      <div class="results-header"><div><p id="mode-label" class="eyebrow"></p><h2 id="results-title" tabindex="-1">Free spaces right now.</h2></div><p id="count"></p></div>
+      <p class="context" id="context"></p>
+      <div id="notice" role="status"></div>
+      <div class="cards" id="cards" aria-busy="true"><div class="empty">Loading available spaces…</div></div>
+      <button id="show-more" class="secondary" aria-controls="cards" aria-expanded="false" hidden></button>
+      <p id="height-note" class="small-note"></p>
+    </section>
+    <details class="explanation">
+      <summary data-i18n="understand">About these numbers</summary>
+      <div class="explanation-grid">
+        <div><h3 data-i18n="nowHeading">Right now</h3><p data-i18n="nowExplanation"></p></div>
+        <div><h3 data-i18n="futureHeading">A later arrival</h3><p data-i18n="futureExplanation"></p></div>
+        <div><h3 data-i18n="percentHeading">The percentage and opening hours</h3><p data-i18n="percentExplanation"></p></div>
+      </div>
+    </details>
+    <section id="privacy-banner" class="privacy-banner" aria-labelledby="privacy-title" hidden>
+      <h2 id="privacy-title" data-i18n="privacyTitle">Save your preferences?</h2>
+      <p data-i18n="privacyText"></p>
+      <div class="consent-actions"><button id="consent-reject" class="secondary" data-i18n="reject">Refuse storage</button><button id="consent-accept" class="secondary" data-i18n="accept">Allow storage</button></div>
+    </section>
+    <p id="privacy-status" class="small-note" role="status"></p>
+    <footer><p><span data-i18n="dataFrom">Open data from</span> <a href="https://data.bs.ch/explore/dataset/100088/" target="_blank" rel="noopener noreferrer" data-i18n="baselCanton">Basel-Stadt</a> · <a href="https://data.bs.ch/explore/dataset/100014/" target="_blank" rel="noopener noreferrer" data-i18n="history">History</a> · CC BY 4.0</p><p data-i18n="footerNote">Independent project. Internet required.</p><nav aria-label="Privacy"><a id="privacy-link" href="privacy.html" data-i18n="privacyLink">Privacy and data</a><button id="privacy-settings" data-i18n="privacySettings">Storage preferences</button>__LEGAL_LINK__</nav></footer>
+    <noscript><p class="notice">JavaScript is required to load current parking data. JavaScript wird für aktuelle Parkdaten benötigt. JavaScript est nécessaire pour charger les places libres. <a href="https://www.parkleitsystem-basel.ch/">Official parking information</a></p></noscript>
+  </main>
+  <script id="config" type="application/json">__CONFIG__</script>
+  <script>__I18N__</script>
+  <script>__APP__</script>
+</body>
+</html>
