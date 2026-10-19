@@ -1,0 +1,60 @@
+{
+  "source_rows": 91472,
+  "clean_rows": 80189,
+  "trusted_garages": [
+    "aeschen",
+    "badbahnhof",
+    "bahnhofsued",
+    "city",
+    "elisabethen",
+    "europe",
+    "kunstmuseum",
+    "steinen",
+    "storchen"
+  ],
+  "train_start": "2026-02-23T15:00:20+00:00",
+  "holdout_start": "2026-08-24T15:00:20+00:00",
+  "cutoff": "2026-10-19T15:00:20+00:00",
+  "holdout_rows": 12051,
+  "overall_metrics": [
+    {
+      "garage_id": "ALL",
+      "model": "Historical median",
+      "n": 12051,
+      "coverage_pct": 100.0,
+      "mae": 16.720147705584598,
+      "median_ae": 9.0,
+      "rmse": 29.766679406472722,
+      "wape_pct": 5.9128605439451976
+    },
+    {
+      "garage_id": "ALL",
+      "model": "Previous week",
+      "n": 12051,
+      "coverage_pct": 100.0,
+      "mae": 21.439631565845158,
+      "median_ae": 10.0,
+      "rmse": 38.918408488695995,
+      "wape_pct": 7.58184400010212
+    },
+    {
+      "garage_id": "ALL",
+      "model": "Ridge calendar",
+      "n": 12051,
+      "coverage_pct": 100.0,
+      "mae": 39.876445048432046,
+      "median_ae": 20.858184321093347,
+      "rmse": 65.88054677242357,
+      "wape_pct": 14.101780840184798
+    }
+  ],
+  "paired_bootstrap": {
+    "n_rows": 12051,
+    "n_days": 57,
+    "mae_improvement_spaces": 4.719483860260559,
+    "ci95_low": 3.0695763303231365,
+    "ci95_high": 6.264610319670863,
+    "method": "paired bootstrap over local calendar days, 2,000 resamples, seed 42"
+  },
+  "report": "analysis\\report.html"
+}

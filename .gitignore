@@ -10,3 +10,5 @@ __pycache__/
 basel_parking/tests/artifacts*/
 basel_parking/data/*.csv
 basel_parking/data/*.tmp
+analysis/outputs/basel_parking.sqlite
+analysis/outputs/holdout_predictions.csv

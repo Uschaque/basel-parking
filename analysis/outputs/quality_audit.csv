@@ -1,0 +1,17 @@
+garage_id,raw_rows,invalid_rows,valid_rows,first_observation,last_observation,capacity_min,capacity_max,invalid_pct,included,exclusion_reason
+aeschen,5717,0,5717.0,2026-02-21 16:00:20+00:00,2026-10-19 15:00:20+00:00,95.0,95.0,0.0,True,
+badbahnhof,5717,0,5717.0,2026-02-21 16:00:20+00:00,2026-10-19 15:00:20+00:00,750.0,750.0,0.0,True,
+bahnhofsued,5717,0,5717.0,2026-02-21 16:00:20+00:00,2026-10-19 15:00:20+00:00,100.0,100.0,0.0,True,
+city,5717,0,5717.0,2026-02-21 16:00:20+00:00,2026-10-19 15:00:20+00:00,1114.0,1114.0,0.0,True,
+elisabethen,5717,0,5717.0,2026-02-21 16:00:20+00:00,2026-10-19 15:00:20+00:00,840.0,840.0,0.0,True,
+europe,5717,0,5717.0,2026-02-21 16:00:20+00:00,2026-10-19 15:00:20+00:00,120.0,120.0,0.0,True,
+kunstmuseum,5717,0,5717.0,2026-02-21 16:00:20+00:00,2026-10-19 15:00:20+00:00,350.0,350.0,0.0,True,
+steinen,5717,0,5717.0,2026-02-21 16:00:20+00:00,2026-10-19 15:00:20+00:00,526.0,526.0,0.0,True,
+storchen,5717,0,5717.0,2026-02-21 16:00:20+00:00,2026-10-19 15:00:20+00:00,142.0,142.0,0.0,True,
+anfos,5717,1933,3784.0,2026-02-21 16:00:20+00:00,2026-10-19 15:00:20+00:00,165.0,165.0,33.811439566206055,False,33.8% de valeurs impossibles ou sans capacité; hauteur de passage non vérifiée
+centralbahn,5717,854,4863.0,2026-02-21 16:00:20+00:00,2026-10-19 15:00:20+00:00,287.0,287.0,14.937904495364702,False,14.9% de valeurs impossibles ou sans capacité; hauteur de passage non vérifiée
+clarahuus,5717,102,5615.0,2026-02-21 16:00:20+00:00,2026-10-19 15:00:20+00:00,52.0,52.0,1.7841525275494141,False,1.8% de valeurs impossibles ou sans capacité; 45.6% de zéros entre 00 h et 06 h : cause incertaine; hauteur de passage non vérifiée
+claramatte,5717,1687,4030.0,2026-02-21 16:00:20+00:00,2026-10-19 15:00:20+00:00,120.0,120.0,29.50848347035158,False,29.5% de valeurs impossibles ou sans capacité; hauteur de passage non vérifiée
+messe,5717,990,4727.0,2026-02-21 16:00:20+00:00,2026-10-19 15:00:20+00:00,727.0,727.0,17.316774532097252,False,17.3% de valeurs impossibles ou sans capacité; hauteur de passage non vérifiée
+postbasel,5717,5717,0.0,,,,,100.0,False,100.0% de valeurs impossibles ou sans capacité; 100.0% de zéros entre 00 h et 06 h : cause incertaine; historique ou localisation insuffisants; hauteur de passage non vérifiée
+rebgasse,5717,0,5717.0,2026-02-21 16:00:20+00:00,2026-10-19 15:00:20+00:00,250.0,250.0,0.0,False,45.9% de zéros entre 00 h et 06 h : cause incertaine; hauteur de passage non vérifiée
